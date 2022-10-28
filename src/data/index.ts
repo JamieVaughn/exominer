@@ -3,9 +3,10 @@ export const constructorLevel = 5
 // 4 => 3.04
 // 5 => 4.06
 
-export const mines = {
-
-}
+export const mines = [
+  {ores: {carbon: {rate: 1, quantity: 0}}, distance: 1, angle: 90},
+  {ores: {carbon: {rate: 1, quantity: 0}, tin: {rate: 1, quantity: 0}}, distance: 1, angle: 90}
+]
 
 export const ores = {
   carbon: {value: 2, quantity: 0 },
