@@ -1,14 +1,16 @@
 import type { Component } from "solid-js";
 import { For } from "solid-js";
-import { ores, refined, constructed } from "./data";
+import { ores } from "./data";
 import styles from "./App.module.css";
 import { Arrays } from "./components/arrays";
+import { Components } from "./components/components";
 
 const App: Component = () => {
   return (
     <div class={styles.App}>
       <header class={styles.header}>Exominer</header>
       <ul>
+        <h3>Ores</h3>
         <For each={Object.entries(ores)}>
           {(ore) => (
             <li>
@@ -19,6 +21,8 @@ const App: Component = () => {
       </ul>
       <hr />
       <Arrays />
+      <hr />
+      <Components />
     </div>
   );
 };

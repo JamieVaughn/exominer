@@ -1,10 +1,11 @@
 import type { Component } from "solid-js";
 import { For } from "solid-js";
-import { ores, refined, constructed } from "../data";
+import { refined } from "../data";
 
 export const Arrays: Component = () => {
   return (
     <ul>
+      <h3>Refined Materials</h3>
       <For each={Object.entries(refined)}>
         {(refine) => (
           <li>
