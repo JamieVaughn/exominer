@@ -2,8 +2,8 @@ import type { Component } from "solid-js";
 import { For } from "solid-js";
 import { ores, refined, constructed } from "./data";
 import styles from "./App.module.css";
+import { Arrays } from "./components/arrays";
 
-console.log(ores);
 const App: Component = () => {
   return (
     <div class={styles.App}>
@@ -17,6 +17,8 @@ const App: Component = () => {
           )}
         </For>
       </ul>
+      <hr />
+      <Arrays />
     </div>
   );
 };
