@@ -4,11 +4,13 @@ import { ores } from "./data";
 import styles from "./App.module.css";
 import { Arrays } from "./components/arrays";
 import { Components } from "./components/components";
+import { SvgBlob } from "./components/svgBlob";
 
 const App: Component = () => {
   return (
     <div class={styles.App}>
       <header class={styles.header}>Exominer</header>
+      <SvgBlob />
       <ul>
         <h3>Ores</h3>
         <For each={Object.entries(ores)}>
